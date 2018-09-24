@@ -1,0 +1,39 @@
+body {
+	font-family: monospace;
+}
+.ds-flip-card {
+	perspective: 1000px;
+}
+.ds-flip-card.hover .ds-flipper {
+	transform: rotateY(180deg);
+}
+
+.ds-flip-card, .front, .back {
+    height: $card-wrapper-height;
+    min-width: $card-wrapper-width;
+    margin-bottom: 20px;
+}
+
+.ds-flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.back {
+	transform: rotateY(180deg);
+}

@@ -1,0 +1,50 @@
+.ds-cards {
+    display: flex;
+    max-width: $cards-width;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    top: 100px;
+    position: relative;
+    &__wrapper {
+        cursor: default;
+        min-width: $card-wrapper-width;
+        height: $card-wrapper-height;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        position: relative;
+        max-width: $card-wrapper-width;
+        color: $white;
+        &--title {
+            font-size: $b70;
+            padding: $text-padding;
+        }
+
+        &--desc {
+            font-size: $b28;
+            padding: $text-padding;
+            bottom: 0px;
+            position: absolute;
+        
+        }
+        &--back {
+            background: $infobip-orange;
+            color: $white;
+            height: 100%;
+            padding: $text-padding;
+            font-size: $b20;
+        }
+        &--actions {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background-color: $overlay;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+

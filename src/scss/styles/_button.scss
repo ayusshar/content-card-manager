@@ -1,0 +1,21 @@
+button {
+    -webkit-appearance: none;
+    border: 0;
+    outline:0;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.open {
+    background-image: url('../images/open.png');
+}
+.delete {
+    background-image: url('../images/delete.png');
+}
+.print {
+    background-image: url('../images/print.png');
+}

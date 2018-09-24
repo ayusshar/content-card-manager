@@ -1,0 +1,29 @@
+.ds-header {
+    background-color: $black;
+    width: 100%;
+    padding: $text-padding;
+    z-index: 1;
+    color: $white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    top:0;
+    left:0;
+    & &__title {
+        font-size: $b40;
+        flex-grow: 1;
+    }
+
+    & &__reset {
+        background-color: #ff6002;
+        right: 52px;
+        font-size: $b26;
+        border-radius: 10px;
+        cursor: pointer;
+        text-align: center;
+        position: fixed;
+        padding: 5px;    
+    }
+}

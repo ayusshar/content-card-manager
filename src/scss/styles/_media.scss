@@ -1,0 +1,21 @@
+@media screen and (max-width: $screen-xs) {
+    .ds-cards {
+        width: 33%;
+    }
+    .ds-header {
+        & &__title {
+            font-size: $b26;
+        }
+        & &__reset {
+            font-size: $b20;
+            right: 15px;
+        }
+    }
+
+}
+
+@media screen and (min-width: $screen-xs + 1) and (max-width: $screen-sm) {
+    .ds-cards {
+        width: 66%;
+    }
+}
